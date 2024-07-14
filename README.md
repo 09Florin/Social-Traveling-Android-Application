@@ -58,3 +58,5 @@ The Bachelor Degree project integrates Google Maps and Google Places in order to
 - XML
 - Firebase
 - Google Cloud Services
+
+The source code will not be shared. I own the rights for the entire project, attempts of copying the design layout will be punished.
