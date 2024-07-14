@@ -49,3 +49,12 @@ The Bachelor Degree project integrates Google Maps and Google Places in order to
 - Firebase Storage for storing project’s resources in cloud or storing the users profile pictures
 - Firebase Firestore in order to develop the database containing various information about souvenirs, countries and users.
 
+
+
+**Used technologies:**
+
+- Android Studio
+- Kotlin
+- XML
+- Firebase
+- Google Cloud Services
