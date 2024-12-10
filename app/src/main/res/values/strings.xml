@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">TrekTrace</string>
+    <string name="google_map_api_key">AIzaSyCbDbXrogY296DK6Ukgj7IkdUeXmqmitKc</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+    <string name="logout">LogOut</string>
+    <string name="changePassword">Change Password</string>
+    <string name="eightCharactersOrMore">Password must be at least 8 characters long.</string>
+    <string name="upperCaseAndLowerCase">Include a mix of uppercase and lowercase letters.</string>
+    <string name="numbersAndSpecialCharacters">Use numbers and special characters for added security.</string>
+    <string name="noPatterns">Avoid using common words or patterns.</string>
+    <string name="username">Username</string>
+    <string name="confirmPassword">Confirm Password</string>
+</resources>

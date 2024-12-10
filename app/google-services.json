@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "913473505733",
+    "project_id": "trektrace-database",
+    "storage_bucket": "trektrace-database.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:913473505733:android:112e8fe8458266756e63ac",
+        "android_client_info": {
+          "package_name": "com.example.testsample2_api34"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMsjMosBjglT3LLjn1PINHRSLs4tzBT_U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

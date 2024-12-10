@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Constrain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QRSouvenirScan">
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="1dp"
+        android:contentDescription="@string/app_name"
+        android:elevation="4pt"
+        app:tint="#bc6ee8"
+        android:src="@drawable/logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/viewTopRectangle"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="#6EE8BC"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textWelcomeScanning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="It seems you found something interesting, let's see what you got :)"
+        android:textColor="@color/purpleText"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        android:textAlignment="center"
+        android:padding="18dp"
+        app:layout_constraintBottom_toTopOf="@id/btnScanQR"
+        android:layout_marginBottom="290dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgScanNow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="116dp"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textWelcomeScanning"
+        app:layout_constraintBottom_toTopOf="@id/btnScanQR"
+        app:srcCompat="@drawable/qr_code"
+        app:tint="@color/purpleText"/>
+
+    <Button
+        android:id="@+id/btnScanQR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="280dp"
+        android:text="Scan QR Code"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/viewTopRectangle" />
+
+    <ImageView
+        android:id="@+id/imgScanVerified"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="116dp"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/textScanResult"
+        app:srcCompat="@drawable/check_mark"
+        app:tint="@color/purpleText"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/textScanResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Text"
+        android:textColor="@color/purpleText"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/btnScanQR"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/bottomNavBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#6EE8BC"
+        android:orientation="vertical"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:id="@+id/firstRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <ImageView
+                android:id="@+id/imgExplore"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/explore_world_by_map" />
+
+            <ImageView
+                android:id="@+id/imgSearchLocation"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/search_by_location" />
+
+            <ImageView
+                android:id="@+id/imgMainPage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/home" />
+
+            <ImageView
+                android:id="@+id/imgScanQR"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/scan"
+                app:tint="@color/quantum_white_100"/>
+
+            <ImageView
+                android:id="@+id/imgProfile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/profile" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imgCurrentPageLine"
+            android:layout_width="100dp"
+            android:layout_height="5dp"
+            android:elevation="16pt"
+            app:srcCompat="@drawable/current_page_menu_line"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
